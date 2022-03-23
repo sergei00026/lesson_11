@@ -113,10 +113,6 @@ a[class*="__tel"]:hover {
 /* ===================================== */
 /* ===================================== */
 /* ===================================== */
-.wrapper {
-  position: relative;
-}
-
 .header {
   position: absolute;
   top: 0;
@@ -196,6 +192,7 @@ a[class*="__tel"]:hover {
 
 /* ===================================== */
 .page {
+  position: relative;
   /* ===================================== */
 }
 
@@ -438,6 +435,7 @@ a[class*="__tel"]:hover {
 
 /* ===================================== */
 .header-two {
+  z-index: 100;
   position: absolute;
   top: 0;
   width: 100%;
@@ -625,6 +623,10 @@ div[class*="__container-two"] {
 }
 
 /* ===================================== */
+.page-two {
+  position: relative;
+}
+
 .whoweare-page-two__body {
   position: relative;
   background: #5d62b5;
