@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  bottom: 0;
+  border: 0;
 }
 
 *,
@@ -83,7 +83,7 @@ ul li {
 }
 
 img {
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 body {
@@ -117,9 +117,8 @@ a[class*="__tel"]:hover {
 .header {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-  max-height: 200px;
-  background: rgba(206, 46, 46, 0.356);
   z-index: 100;
 }
 
@@ -308,13 +307,6 @@ a[class*="__tel"]:hover {
   display: inline-block;
 }
 
-.main-block span {
-  display: inline-block;
-  margin: 0px 0px 0px 50px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
 .main-block__play {
   display: inline-block;
   position: relative;
@@ -346,6 +338,15 @@ a[class*="__tel"]:hover {
       -ms-transform: scale(1.8);
           transform: scale(1.8);
   opacity: 0.5;
+}
+
+.main-block__play span {
+  margin: 0px 0px 0px 50px;
+  min-width: 100px;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
 }
 
 .main-block__heading {
@@ -442,8 +443,6 @@ a[class*="__tel"]:hover {
   position: absolute;
   top: 0;
   width: 100%;
-  max-height: 300px;
-  background: rgba(206, 46, 46, 0.356);
 }
 
 .top-header-two {
@@ -523,6 +522,7 @@ a[class*="__tel"]:hover {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #ffffff;
+  display: inline-block;
 }
 
 /* ===================================== */
@@ -626,10 +626,6 @@ div[class*="__container-two"] {
 }
 
 /* ===================================== */
-.page-two {
-  position: relative;
-}
-
 .whoweare-page-two__body {
   position: relative;
   background: #5d62b5;
@@ -682,8 +678,20 @@ div[class*="__container-two"] {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #5d62b5;
-  margin: 0px 0px 33px 0px;
+  margin: 0px 0px 33px 33px;
   position: relative;
+}
+
+.block-title__title::before {
+  content: "";
+  background: url("../img/whoweare/Overline-Mark-2.svg") center no-repeat;
+  height: 16px;
+  width: 17px;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  margin: 0px 0px 0px -33px;
 }
 
 .block-title__title_white {
@@ -697,7 +705,7 @@ div[class*="__container-two"] {
   width: 17px;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   margin: 0px 0px 0px -33px;
 }
@@ -714,7 +722,152 @@ div[class*="__container-two"] {
 }
 
 /* ===================================== */
+.ourpromise-page-two {
+  padding: 0px 0px 122px 0px;
+}
+
+.ourpromise-page-two__title {
+  margin: 0px 0px 26px 0px;
+}
+
+.ourpromise-page-two__item {
+  display: inline-block;
+  max-width: 324px;
+  padding: 0px 0px 0px 86px;
+  position: relative;
+}
+
+.ourpromise-page-two__item:not(:last-child) {
+  margin: 0px 24px 0px 0px;
+}
+
+.ourpromise-page-two__item:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/ourpromise/dog_love_24x.svg") 0 0 no-repeat;
+}
+
+.ourpromise-page-two__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/ourpromise/dog_vet_24x.svg") 0 0 no-repeat;
+}
+
+.ourpromise-page-two__item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/ourpromise/dog_stream_24x.svg") 0 0 no-repeat;
+}
+
+.ourpromise-page-two__heading {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #f2726f;
+  margin: 0px 0px 20px 0px;
+}
+
+.ourpromise-page-two__text {
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+}
+
 /* ===================================== */
+.video-page-two {
+  background: #29c3be;
+  position: relative;
+}
+
+.video-page-two::after {
+  content: "";
+  position: absolute;
+  width: 368px;
+  height: 234px;
+  top: 0;
+  left: 0;
+  margin: 0px 0px 0px 0;
+  background: url("../img/video/Blob_2.svg") 0 0 no-repeat;
+  z-index: 3;
+}
+
+.video-page-two__images {
+  display: inline-block;
+  position: relative;
+  margin: 0px 0px 0px calc(-207 * 100 / 1440 * 1%);
+}
+
+.video-page-two__images::before {
+  content: "";
+  position: absolute;
+  width: 236px;
+  height: 317px;
+  background: url("../img/video/Vector.svg") 0 0 repeat;
+  z-index: 2;
+  top: calc(122 * 100 / 500 * 1%);
+  left: calc(-31 * 100 / 1440 * 1%);
+}
+
+.video-page-two__dog {
+  position: relative;
+  z-index: 5;
+}
+
+.video-page-two__content {
+  display: inline-block;
+  padding: 112px 0px 169px 0px;
+  width: 50%;
+  position: relative;
+}
+
+.video-page-two__content::before {
+  content: "";
+  background: url("../img/video/Line_1.svg") 0 0 no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.video-page-two__content::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 142px;
+  right: -32px;
+  background: url("../img/video/tennis-ball.png") center no-repeat;
+}
+
+.video-page-two__heading {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin: 0px 0px 45px 0px;
+  position: relative;
+  z-index: 4;
+  max-width: 411px;
+}
+
+.video-page-two__btn {
+  position: relative;
+  z-index: 4;
+}
+
 /* ===================================== */
 /* ===================================== */
 /* ===================================== */
