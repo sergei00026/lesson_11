@@ -724,6 +724,9 @@ div[class*="__container-two"] {
 /* ===================================== */
 .ourpromise-page-two {
   padding: 0px 0px 122px 0px;
+  z-index: 1;
+  position: relative;
+  background: #fff;
 }
 
 .ourpromise-page-two__title {
@@ -789,6 +792,7 @@ div[class*="__container-two"] {
 .video-page-two {
   background: #29c3be;
   position: relative;
+  z-index: 1;
 }
 
 .video-page-two::after {
@@ -828,7 +832,7 @@ div[class*="__container-two"] {
 .video-page-two__content {
   display: inline-block;
   padding: 112px 0px 169px 0px;
-  width: 50%;
+  width: 41%;
   position: relative;
 }
 
@@ -869,8 +873,269 @@ div[class*="__container-two"] {
 }
 
 /* ===================================== */
+.our-services-page-two {
+  background: #f5f5f5;
+  padding: 110px 0px;
+  position: relative;
+}
+
+.our-services-page-two::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 510px;
+  height: 1212px;
+  top: calc(-583 * 100 / 1212 * 1%);
+  right: 0;
+  background: url("../img/services/Blob-2.svg") 0 0 no-repeat;
+  z-index: 0;
+}
+
+.our-services-page-two__container-two {
+  z-index: 1;
+  position: relative;
+}
+
+.our-services-page-two__title {
+  margin: 0px 0px 78px 0px;
+}
+
+.our-services-page-two__body {
+  text-align: center;
+  margin: 0px 0px 66px 0px;
+}
+
+.our-services-page-two__item {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 324px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 50px 43px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.our-services-page-two__item:hover {
+  -webkit-filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+          filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.our-services-page-two__item:nth-child(1), .our-services-page-two__item:nth-child(2), .our-services-page-two__item:nth-child(4), .our-services-page-two__item:nth-child(5) {
+  margin-right: 24px;
+}
+
+.our-services-page-two__item:nth-child(1), .our-services-page-two__item:nth-child(2), .our-services-page-two__item:nth-child(3) {
+  margin-bottom: 24px;
+}
+
+.our-services-page-two__img {
+  margin: 0px 0px 33px 0px;
+}
+
+.our-services-page-two__heading {
+  margin: 0px 0px 20px 0px;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #f2726f;
+}
+
+.our-services-page-two__text {
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+}
+
+.our-services-page-two__box {
+  text-align: center;
+}
+
 /* ===================================== */
+.appointment-page-two {
+  background: url("../img/appointment/bg.jpg") center/cover no-repeat;
+  padding: 130px 0px 210px 0px;
+  position: relative;
+}
+
+.appointment-page-two::before {
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 560px;
+  top: calc(239 * 100 / 980 * 1%);
+  left: calc(100 * 100 / 1440 * 1%);
+  background: url("../img/appointment/Vector.svg") 0 0 repeat;
+}
+
+.appointment-page-two__interaction-box {
+  display: inline-block;
+  position: relative;
+}
+
+.appointment-page-two__interaction-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 707px;
+  bottom: calc(-67 * 100 / 707 * 1%);
+  left: calc(-93 * 100 / 650 * 1%);
+  background: url("../img/appointment/Blob-2.svg") 0 0 no-repeat;
+}
+
+.appointment-page-two__interaction {
+  max-width: 585px;
+  max-height: 640px;
+  background: #5d62b5;
+  border-radius: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.appointment-page-two__form {
+  padding: 76px 54px;
+}
+
+.appointment-page-two__heading {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin: 0px 0px 48px 0px;
+}
+
+.appointment-page-two input {
+  width: 224px;
+}
+
+.appointment-page-two input,
+.appointment-page-two textarea {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background: inherit;
+  padding: 16px 23px;
+}
+
+.appointment-page-two input::-webkit-input-placeholder,
+.appointment-page-two textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.appointment-page-two input:-ms-input-placeholder,
+.appointment-page-two textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.appointment-page-two input::-ms-input-placeholder,
+.appointment-page-two textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.appointment-page-two input::placeholder,
+.appointment-page-two textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.appointment-page-two__name {
+  margin: 0px 22px 22px 0px;
+}
+
+.appointment-page-two__phone {
+  margin: 0px 22px 22px 0px;
+}
+
+.appointment-page-two__tellme {
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+}
+
+.appointment-page-two__btn {
+  margin-left: auto;
+  display: block;
+}
+
+.appointment-page-two__content {
+  display: inline-block;
+  max-width: 324px;
+  vertical-align: top;
+  text-align: center;
+  margin: 0px 0px 0px 111px;
+  padding: 160px 0px 0px 0px;
+}
+
+.appointment-page-two__acall {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 0px 46px 0px;
+}
+
+.appointment-page-two__num {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 56px;
+  color: #ffffff;
+  margin: 0px 0px 46px 0px;
+}
+
+.appointment-page-two__customers {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
 /* ===================================== */
+.gallery-page-two {
+  padding: 100px 0px 0px 0px;
+}
+
+.gallery-page-two__title {
+  margin: 0px 0px 55px 0px;
+}
+
+.gallery-page-two__tabs {
+  margin: 0px 0px 55px 0px;
+}
+
+.gallery-page-two__link {
+  width: 19%;
+  display: inline-block;
+  text-align: center;
+}
+
+.gallery-page-two__img {
+  display: none;
+}
+
+.gallery-page-two__img:target {
+  display: block;
+}
+
 /* ===================================== */
 /* ===================================== */
 /* ===================================== */
